@@ -8,7 +8,7 @@ import {
   Paper,
   Typography,
 } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { getAllTasks, selectAll } from "../../store/modules/tasks/TasksSlice";
 import RadioButtonUncheckedIcon from "@mui/icons-material/RadioButtonUnchecked";

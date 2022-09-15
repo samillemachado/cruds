@@ -1,16 +1,16 @@
 import {
-  Button,
-  CircularProgress,
   Grid,
   IconButton,
   LinearProgress,
   Link,
-  Paper,
   Typography,
 } from "@mui/material";
 import React, { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
-import { getAllTasks, selectAll } from "../../store/modules/tasks/TasksSlice";
+import {
+  getAllTasks,
+  selectAll,
+} from "../../store/modules/tasks/TasksSvcSlive";
 import RadioButtonUncheckedIcon from "@mui/icons-material/RadioButtonUnchecked";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
@@ -43,7 +43,7 @@ const TasksSeviceApi: React.FC = () => {
           >
             JSONPlaceholder
           </Link>
-          .
+          - com service.
         </Typography>
       </div>
       <Grid sx={{ margin: 5 }}>
