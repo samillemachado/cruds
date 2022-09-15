@@ -1,4 +1,2 @@
 # CRUDS
-Componentes ReactJS
-Redux Tollkit
-Consumo de API
+Componentes ReactJS, Redux Tollkit, Adapter e consumo de API
