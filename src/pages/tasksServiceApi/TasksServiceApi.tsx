@@ -10,7 +10,7 @@ import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import {
   getAllTasks,
   selectAll,
-} from "../../store/modules/tasks/TasksSvcSlive";
+} from "../../store/modules/tasks/TasksSvcSlice";
 import RadioButtonUncheckedIcon from "@mui/icons-material/RadioButtonUnchecked";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
@@ -19,7 +19,7 @@ const TasksSeviceApi: React.FC = () => {
   const tasksRedux = useAppSelector(selectAll);
 
   //pega um estado específico
-  const loagingRedux = useAppSelector((state) => state.tasks.loading);
+  const loadingRedux = useAppSelector((state) => state.tasks.loading);
 
   //pega da API
   const dispatch = useAppDispatch();
@@ -47,7 +47,7 @@ const TasksSeviceApi: React.FC = () => {
         </Typography>
       </div>
       <Grid sx={{ margin: 5 }}>
-        {loagingRedux ? (
+        {loadingRedux ? (
           <LinearProgress />
         ) : (
           <>
